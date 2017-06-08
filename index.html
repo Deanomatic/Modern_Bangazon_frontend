@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bangazon API</title>
+	<style type="text/css">
+		.metadata {
+			font-size: 0.8rem;
+			font-style: italic;
+			color: #999;
+		}
+	</style>
+</head>
+<body>
+	<div ng-app='BangaClient'>
+      <div>
+        <span>
+          <a ng-href="/#!/products">Products</a>
+          <a ng-href="/#!/types">Product Types</a>
+        </span>
+      </div>
+      <div ng-view></div>
+    </div>
+	
+    <script src='lib/node_modules/angular/angular.min.js'></script>
+    <script src='lib/node_modules/angular-route/angular-route.min.js'></script>
+    <!-- links for ctrls -->
+	<script type="text/javascript" src="app/controllers/AuthCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/ProductsCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/ProductTypesCtrl.js"></script>
+	<script type="text/javascript" src="app/controllers/RegisterCtrl.js"></script>
+	<!-- link for factory -->
+	<script type="text/javascript" src="RootFactory.js"></script>
+
+</body>
+</html>
